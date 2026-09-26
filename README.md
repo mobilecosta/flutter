@@ -9,7 +9,7 @@ https://www.youtube.com/watch?v=E8JQVC_yXCg&pp=ugUHEgVwdC1CUg%3D%3D
 
 https://www.linkedin.com/posts/felipe-pelissari_protheus-flutter-advpl-activity-7394333445742796800-hdvT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAS_d84BXtjQKMTY1zd7Lar4QjmTRl6_DMU
 
-## Curso LUTTER EXPERIENCE · 10ª EDIÇÃO · 28 SET → 4 OUT
+## Curso FLUTTER EXPERIENCE · 10ª EDIÇÃO · 28 SET → 4 OUT
 
 O app desta edição é um álbum de figurinhas digital. Não é app de exemplo, não é to-do list com dado falso no código:
 
