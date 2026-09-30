@@ -9,6 +9,8 @@ https://www.youtube.com/watch?v=E8JQVC_yXCg&pp=ugUHEgVwdC1CUg%3D%3D
 
 https://www.linkedin.com/posts/felipe-pelissari_protheus-flutter-advpl-activity-7394333445742796800-hdvT?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAS_d84BXtjQKMTY1zd7Lar4QjmTRl6_DMU
 
+https://github.com/R5-Academy/flutter-experience-worldcup-2026-mobile
+
 https://flutterexperience.com.br/kit
 
 ## Curso FLUTTER EXPERIENCE · 10ª EDIÇÃO · 28 SET → 4 OUT
