@@ -15,6 +15,8 @@ https://github.com/R5-Academy/flutter-experience-worldcup-2026-mobile
 
 https://flutterexperience.com.br/kit
 
+## Aula 3 - https://www.youtube.com/live/JzwqZnPRovo - Arquitetura + Login
+
 ## Curso FLUTTER EXPERIENCE · 10ª EDIÇÃO · 28 SET → 4 OUT
 
 O app desta edição é um álbum de figurinhas digital. Não é app de exemplo, não é to-do list com dado falso no código:
