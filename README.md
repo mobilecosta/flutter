@@ -44,3 +44,48 @@ QUA · 30/09 - O app ganha memória. Sessão que sobrevive ao restart e quatro a
 QUI · 01/10 - Dados reais na tela. A home para de fingir: token carimbado em toda chamada, sessão expirada tratada e a tela mais densa do app desenhada inteira.
 
 SEX · 02/10 - O álbum inteiro, vivo. Nenhum pacote novo, nenhuma camada nova. Só o padrão que você aprendeu, escalando: filtro, busca, colar, corrigir, excluir.
+
+Subir a API na sua máquina
+Uma vez só, em três passos — quatro no macOS, que ainda pede a liberação do Gatekeeper. Com o servidor no ar, a documentação interativa da API responde em http://localhost:8080/docs.
+
+R5/Run/Windows
+Windows (PowerShell)
+# 1. o download traz outro .zip dentro — descompacte os dois
+cd wc_2026_api-1.0.0-windows-x64
+
+# 2. crie o .env e preencha o JWT_SECRET
+copy .env.example .env
+notepad .env
+
+# 3. suba o servidor
+.\bin\server.exe
+
+# o Swagger sobe junto: http://localhost:8080/docs
+Na primeira execução o SmartScreen pode avisar que o app é de um editor desconhecido: "Mais informações" e "Executar assim mesmo".
+
+R5/Run/Mac-Linux
+macOS e Linux
+# 1. o download traz um .tar.gz dentro
+tar -xzf wc_2026_api-1.0.0-macos-arm64.tar.gz
+cd wc_2026_api-1.0.0-macos-arm64
+
+# 2. crie o .env e preencha o JWT_SECRET
+cp .env.example .env
+
+# 3. só no macOS: libere os dois binários do Gatekeeper
+xattr -d com.apple.quarantine bin/server
+xattr -d com.apple.quarantine lib/libsqlite3.dylib
+
+# 4. suba o servidor
+./bin/server
+
+# o Swagger sobe junto: http://localhost:8080/docs
+O passo 3 é só para macOS e é obrigatório — veja o aviso abaixo. No Linux, pule do 2 direto para o 4.
+
+Obrigatório no macOS
+Libere os dois binários do Gatekeeper
+O servidor não é assinado, e o macOS põe em quarentena tanto o executável quanto a biblioteca nativa do SQLite. Liberar só o bin/server não resolve: o servidor sobe e morre ao abrir o banco. Rode os dois comandos dentro da pasta descompactada, antes do ./bin/server.
+
+xattr -d com.apple.quarantine bin/server
+xattr -d com.apple.quarantine lib/libsqlite3.dylib
+Vale para os dois pacotes de Mac (arm64 e x64). No Windows e no Linux nada disso é necessário.
